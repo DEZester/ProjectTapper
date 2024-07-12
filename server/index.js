@@ -1,5 +1,10 @@
-const express = require('express')
+import express from 'express';
+import dotenv from 'dotenv'
+import {textWithColor} from "./helpers/helpers.js";
 
+dotenv.config()
+
+const PORT = process.env.PORT || 3001;
 const app = express();
 
-app.listen(3000, () => console.log('listening on 3000'))
+app.listen(PORT, () => console.log(textWithColor(`Listening on ${PORT}`)))
