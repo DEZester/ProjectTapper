@@ -1,5 +1,3 @@
-import './style.scss';
-
 const NavBar = () => {
   return <></>
 }
