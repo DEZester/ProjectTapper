@@ -1,5 +1,5 @@
 const MainContent = () => {
-  return <></>
+  return <div>MainContent</div>
 }
 
 export default MainContent

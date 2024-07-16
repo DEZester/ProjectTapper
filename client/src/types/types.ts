@@ -3,6 +3,8 @@ export interface Theme {
   lightPrimaryColor: string,
   secondaryColor: string
   lightSecondaryColor: string,
+  thirdColor: string,
+  lightThirdColor: string,
 }
 
 export interface DeviceSizes {

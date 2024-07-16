@@ -1,9 +1,9 @@
 interface Props {
-  
+
 }
 
 const Header: Props = () => {
-  return <></>
+  return <div>Header</div>
 }
 
 export default Header
