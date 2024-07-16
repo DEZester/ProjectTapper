@@ -1,10 +1,13 @@
 import Template from "@/templates/Template.tsx";
+import NavBar from "@/components/NavBar/NavBar.tsx";
+import MainContent from "@/components/MainContent/MainContent.tsx";
 
 function App() {
   return (
     <>
       <Template>
-        <p>Hello</p>
+        <NavBar/>
+        <MainContent/>
       </Template>
     </>
   )

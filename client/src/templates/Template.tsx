@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Template: React.FC<Props> = ({children}) =>
-  <div>
+  <div className='template'>
     {children}
   </div>
 ;
