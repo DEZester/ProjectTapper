@@ -1,8 +1,8 @@
-interface Props {
+interface HeaderProps {
 
 }
 
-const Header: Props = () => {
+const Header: HeaderProps = () => {
   return <div>Header</div>
 }
 
