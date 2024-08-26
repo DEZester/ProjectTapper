@@ -13,3 +13,4 @@ export interface DeviceSizes {
   desktop: string,
   large: string
 }
+

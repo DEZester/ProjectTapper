@@ -1,16 +1,16 @@
-import {FC} from 'react';
-import NavBar from "@/components/NavBar/NavBar";
+import {FC, ReactNode} from 'react';
 import {theme_default} from "@/styles/theme.ts";
 import {S} from "@/templates/Templates.styled.tsx";
-import MainContent from "@/components/MainContent/MainContent.tsx";
 
 const StyledTheme = S.createStyledTheme(theme_default);
 
+interface PropsChildren {
+  children: ReactNode
+}
 
-const Template: FC = () => (
+const Template: FC<PropsChildren> = ({children}) => (
   <StyledTheme>
-    <NavBar/>
-    <MainContent/>
+    {children}
   </StyledTheme>
 );
 

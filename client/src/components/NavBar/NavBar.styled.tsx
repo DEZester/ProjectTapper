@@ -9,7 +9,5 @@ export namespace S {
     height: 100vh;
     width: 400px;
     background-color: ${theme.lightPrimaryColor};
-    transform: translateX(${props => props.open ? '0' : '-100%'});
-    transition: transform 0.5s ease-in-out;
   `
 }
