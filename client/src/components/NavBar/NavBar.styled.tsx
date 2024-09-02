@@ -1,9 +1,9 @@
 import {theme_default} from "@/styles/theme.ts";
-import {NavBarProps} from "@/components/NavBar/NavBar.tsx";
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 export namespace S {
-  export const createStyledNavBar = (theme: typeof theme_default) => styled.div<NavBarProps>`
+  export const createStyledNavBar = (theme: typeof theme_default) => styled(motion.div)`
     position: relative;
     display: flex;
     height: 100vh;

@@ -3,10 +3,6 @@ import {theme_default} from "@/styles/theme.ts";
 import NavBarButton from "@/components/UI/Buttons/NavBarButton/NavBarButton.tsx";
 import {S} from "@/components/NavBar/NavBar.styled.tsx";
 
-export interface NavBarProps {
-  open: boolean;
-}
-
 const StyledNavBar = S.createStyledNavBar(theme_default);
 
 const NavBar = () => {
@@ -16,7 +12,11 @@ const NavBar = () => {
     setIsOpen(prevState => !prevState)
   }
 
-  return <StyledNavBar open={isOpen}>
+  return <StyledNavBar
+    initial={{x: '-100%'}}
+    animate={isOpen ? {x: 0} : {x: "-100%"}} // Or your desired animate logic
+    transition={{type: "spring", stiffness: 100, damping: 20}}
+  >
     NavBar
     {
       //links
