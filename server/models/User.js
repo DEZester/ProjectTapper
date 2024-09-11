@@ -35,7 +35,11 @@ const UserSchema = new mongoose.Schema(
       default: []
     }],
     friends: [Number],
-    achievments: {},
+    achievements: [{
+      type: Schema.Types.ObjectId,
+      ref: 'Achievement',
+      default: []
+    }],
     role: {
       type: String,
       enum: ["admin", "user"],
